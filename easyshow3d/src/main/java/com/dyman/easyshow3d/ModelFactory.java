@@ -26,7 +26,7 @@ public class ModelFactory {
     private static byte[] modelBytes = null;
     private static String modelType;
     private static ModelObject modelObject;
-
+    public static String aaa="dsf";
     public static void decodeFile(Context context, String filePath, ModelLoaderListener listener) {
 
         if (FileUtils.isNullString(filePath)) {

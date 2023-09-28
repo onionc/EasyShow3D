@@ -1,13 +1,18 @@
 package com.dyman.show3dmodel.ui;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
-import android.support.v7.widget.Toolbar;
+
+import android.provider.Settings;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
@@ -15,6 +20,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
@@ -58,6 +66,7 @@ public class MainActivity extends BaseActivity{
         databaseHelper = new DatabaseHelper(MainActivity.this);
 
         initView();
+        checkPermission();
         initDatas();
         checkAcceptFile();
     }
@@ -232,5 +241,28 @@ public class MainActivity extends BaseActivity{
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void checkPermission(){
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
+            // 版本<23
+            Log.d(TAG, "版本太低，版本号："+Build.VERSION.SDK_INT);
+            return;
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // 版本>=30
+            if(!Environment.isExternalStorageManager()){
+                Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                startActivity(intent);
+                return;
+            }
+        }else{
+
+            // 23~29
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 101);
+                return;
+            }
+        }
+
     }
 }

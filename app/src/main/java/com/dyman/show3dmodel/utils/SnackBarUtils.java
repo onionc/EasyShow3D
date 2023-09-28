@@ -1,7 +1,8 @@
 package com.dyman.show3dmodel.utils;
 
-import android.support.design.widget.Snackbar;
 import android.view.View;
+
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Created by dyman on 16/8/21.

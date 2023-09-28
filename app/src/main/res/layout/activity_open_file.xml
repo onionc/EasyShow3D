@@ -9,12 +9,12 @@
     android:orientation="vertical"
     tools:context="com.dyman.show3dmodel.ui.OpenFileActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_activity_openFile"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -22,7 +22,7 @@
             app:title="@string/open_file"
             app:navigationIcon="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,12 +44,13 @@
                     android:layout_weight="1"
                     android:padding="10dp"
                     android:background="?android:selectableItemBackground">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/ic_file_stl"/>
+                        android:padding="10dp"
+                        android:src="@mipmap/ic_file_stl" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -160,13 +161,13 @@
                     android:textSize="12sp"
                     android:padding="10dp"/>
             </RelativeLayout>
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/frequentFolder_rv_activity_open_file"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white_FF">
 
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
     </ScrollView>
 

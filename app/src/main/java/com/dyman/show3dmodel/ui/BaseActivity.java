@@ -3,9 +3,11 @@ package com.dyman.show3dmodel.ui;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.dyman.show3dmodel.R;
 import com.dyman.show3dmodel.manager.SystemBarTintManager;

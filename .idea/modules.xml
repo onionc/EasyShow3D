@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Show3D.iml" filepath="$PROJECT_DIR$/Show3D.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/easyshow3d/easyshow3d.iml" filepath="$PROJECT_DIR$/easyshow3d/easyshow3d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EasyShow3D.iml" filepath="$PROJECT_DIR$/.idea/modules/EasyShow3D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EasyShow3D.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.iml" filepath="$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.main.iml" filepath="$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/easyshow3d/EasyShow3D.easyshow3d.unitTest.iml" />
     </modules>
   </component>
 </project>

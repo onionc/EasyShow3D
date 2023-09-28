@@ -2,8 +2,9 @@ package com.dyman.show3dmodel.ui;
 
 import android.os.Handler;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.dyman.show3dmodel.R;
 import com.dyman.show3dmodel.config.MyConfig;
